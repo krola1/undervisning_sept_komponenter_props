@@ -25,9 +25,15 @@ function App() {
     },
   ];
 
+  const bluey = {
+    name: "Bluey",
+    age: 6,
+    species: "Blue Heeler",
+  };
+
   return (
     <>
-      <Child name="Kine" />
+      <Child {...bluey} />
     </>
   );
 }

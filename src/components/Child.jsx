@@ -1,8 +1,10 @@
-export default function Child() {
+import GrandChild from "./GrandChild.jsx";
+
+export default function Child({ name, ...rest }) {
   return (
     <>
-      <h1>Child Page</h1>
-      <p>This is the Child page.</p>
+      <h1>child: {name}</h1>
+      <GrandChild {...rest} />
     </>
   );
 }

@@ -1,8 +1,10 @@
-export default function GrandChild() {
+export default function GrandChild(props) {
+  console.log(props);
+
   return (
     <>
-      <h1>GrandChild Page</h1>
-      <p>This is the GrandChild page.</p>
+      <h1>GrandChild </h1>
     </>
   );
 }
+<
